@@ -30,8 +30,10 @@ public class CloudCover : MonoBehaviour
 
             int spriteNum = Random.Range(0, cloudSprites.Length);
             sRend.sprite = cloudSprites[spriteNum];
+
             cloudTrans.position = RandomPos();
             cloudTrans.SetParent(parentTrans, true);
+
             scaleMult = Random.Range(scaleRange.x, scaleRange.y);
             cloudTrans.localScale = Vector3.one * scaleMult;
         }
