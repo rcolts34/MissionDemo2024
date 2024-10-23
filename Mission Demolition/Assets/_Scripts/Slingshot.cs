@@ -85,10 +85,13 @@ public class Slingshot : MonoBehaviour
             // Enumeration - creating a hierarchy object set (like base 10, days in a week. sets of things.)  
             projRB.collisionDetectionMode = CollisionDetectionMode.Continuous;
             projRB.velocity = -mouseDelta * velocityMult;
+            // Switch to slingshot view immediately before setting POI
+            FollowCam.SWITCH_VIEW(FollowCam.eView.slingshot);
             FollowCam.POI = projectile;
             // Add a ProjectileLine to the Projectile
             Instantiate<GameObject>(projLinePrefab, projectile.transform);
             projectile = null;
+            MissionDemolition.SHOT_FIRED();
         }
     }
 }
