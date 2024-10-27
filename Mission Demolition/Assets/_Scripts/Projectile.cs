@@ -38,7 +38,7 @@ public class Projectile : MonoBehaviour
     {
         if (rigid.isKinematic || !awake) return;
 
-        Vector3 deltaV3 = transform.position = prevPos;
+        Vector3 deltaV3 = transform.position - prevPos;
         deltas.Add(deltaV3.magnitude);
         prevPos = transform.position;
 

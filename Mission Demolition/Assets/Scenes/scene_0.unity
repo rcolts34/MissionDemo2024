@@ -1033,7 +1033,7 @@ MonoBehaviour:
   castles:
   - {fileID: 7785503776979943056, guid: c7f9d73692ddc87468463e4e0ce27022, type: 3}
   - {fileID: 7785503776979943056, guid: 52e92829186bd5e4582aae2c2a97d4f0, type: 3}
-  - {fileID: 7785503776979943056, guid: 04e060a70553a7946b35fa32717bb1b2, type: 3}
+  - {fileID: 132270267194887676, guid: 388e2d3dbf6f9cc46bcabc7abf97f3ce, type: 3}
   level: 0
   levelMax: 0
   shotsTaken: 0

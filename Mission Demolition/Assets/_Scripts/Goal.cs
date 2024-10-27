@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 [RequireComponent(typeof(Renderer))]
 
 public class Goal : MonoBehaviour
@@ -13,10 +14,9 @@ public class Goal : MonoBehaviour
         if (proj != null)
         {
             Goal.goalMet = true;
-            Material mat = GetComponent<Renderer>().material;
-            Color c = mat.color;
-            c.a = 0.75f;
-            mat.color = c;
+            Color c = GetComponent<Renderer>().material.color;
+            c.a = 0.9f;
+            GetComponent<Renderer>().material.color = c;
         }
 
     }

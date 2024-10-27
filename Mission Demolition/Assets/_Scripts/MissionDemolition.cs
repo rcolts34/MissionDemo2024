@@ -69,7 +69,7 @@ public class MissionDemolition : MonoBehaviour
         {
             // Show the data in the GUITexts
             uitLevel.text = "Level: "+(level+1)+" of "+levelMax;
-            uitShots.text = "Shots Taken: " + shotsTaken;
+            uitShots.text = "Shots Taken: "+shotsTaken;
         }
     }
 
