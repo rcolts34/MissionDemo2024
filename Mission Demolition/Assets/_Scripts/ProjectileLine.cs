@@ -27,12 +27,16 @@ public class ProjectileLine : MonoBehaviour
         if (_drawing)
         {
             _line.positionCount++;
-            _line.SetPosition(_line.positionCount-1, transform.position);
+            _line.SetPosition(_line.positionCount - 1, transform.position);
             // If the Projectile Rigidbody is sleeping, stop drawing
             if (_projectile != null)
             {
-                _drawing = false;
-                _projectile = null;
+                if ( !_projectile.awake)
+                {
+                    _drawing = false;
+                    _projectile = null;
+                }
+
             }
         }
     }
